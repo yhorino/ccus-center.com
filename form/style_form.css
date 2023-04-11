@@ -1,0 +1,116 @@
+/* CSS Document */
+
+.price {
+ background-color: #F3F3F3;
+ padding: 50px 0;
+ text-align: center;
+}
+
+.price_body_line1 {
+ color: var(--logo-red);
+ font-weight: bold;
+ font-size: clamp(20px, 5vw, 40px);
+}
+.price_body_line2 {
+ color: var(--logo-red);
+ font-weight: bold;
+ font-size: clamp(22px, 6vw, 50px);
+}
+.price_body_price {
+ color: var(--logo-red);
+ font-weight: bold;
+ font-size: clamp(22px, 6vw, 50px);
+}
+
+.form_input_section {
+ margin: 40px 0;
+}
+.form_input_section_title {
+ background-color: var(--logo-green);
+ color: #fff;
+ text-align: center;
+ padding: 10px 0;
+ line-height: 1em;
+}
+
+.form_input_itembox {
+ padding: 20px;
+ border-bottom: 1px solid #ccc;
+ display: grid;
+ grid-template-columns: 350px 1fr;
+ align-items: start;
+ justify-content: start;
+}
+
+.form_input_title.required::before {
+ content: '必須';
+ background-color: var(--logo-red);
+ color: #fff;
+ font-size: 14px;
+ border: 1px solid var(--logo-red);
+ text-align: center;
+}
+.form_input_title.no-required::before {
+ content: '任意';
+ background-color: #fff;
+ color: #000;
+ font-size: 14px;
+ border: 1px solid #000;
+ text-align: center;
+}
+.form_input_title {
+ color: var(--logo-green);
+ font-weight: bold;
+ display: grid;
+ grid-template-columns: 52px 1fr;
+ grid-column-gap: 5px;
+ align-items: center;
+}
+
+.form_input_item {
+ display: flex;
+ gap: 10px;
+ align-items: center;
+}
+.form_input_item input,
+.form_input_item select,
+.form_input_item textarea {
+ padding: 0.5em 1em;
+ font-size: clamp(14px, 4vw, 18px);
+ width: 100%;
+}
+.form_input_item input::placeholder,
+.form_input_item select::placeholder,
+.form_input_item textarea::placeholder {
+ color: #ccc;
+}
+.form_input_item textarea {
+ height: 8em;
+}
+.ccus_Birth__c_year {
+ min-width: 6em;
+}
+
+.submit_box {
+ padding: 40px 0;
+ display: grid;
+ grid-template-columns: min(90vw, 400px);
+ justify-content: center;
+ align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+ .form_input_itembox{
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+ }
+}
+
+
+.done{
+ text-align: center;
+}
+
+.done_body {
+    padding: 0 15px;
+}

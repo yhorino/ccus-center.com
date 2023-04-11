@@ -18,6 +18,12 @@
  <h1 class="kv">
   <img src="img/kv_pc.png" alt="全国建設キャリアアップ登録　断トツ安い代行申請" class="kv_pc hide_sp">
   <img src="img/kv_sp.png" alt="全国建設キャリアアップ登録　断トツ安い代行申請" class="kv_sp hide_pc">
+  
+  <div class="moushikomi_button_wrapper wrapper pc_kv_overlap">
+   <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+   <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
+  </div>
+  
  </h1>
  
  <div class="ginousya_touroku">
@@ -39,7 +45,7 @@
   </div>
   
   <div class="moushikomi_button_wrapper wrapper">
-   <a href="tel:0120968631" class="moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+   <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
   </div>
   
@@ -55,7 +61,7 @@
   </div>
   
   <div class="moushikomi_button_wrapper wrapper">
-   <a href="tel:0120968631" class="moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+   <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
   </div>
   
@@ -89,7 +95,7 @@
   <div class="moushikomi_button_wrapper wrapper">
    <div class="voice_buttontitle hide_sp">急ぎの方はまずは申込み</div>
    <div class="voice_buttontitle hide_pc">急ぎの方はまずは電話</div>
-   <a href="tel:0120968631" class="moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+   <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
   </div>
   
@@ -154,7 +160,7 @@
   <div class="moushikomi_button_wrapper wrapper">
    <div class="step_buttontitle hide_sp">カードが欲しい方は申込み</div>
    <div class="step_buttontitle hide_pc">カードが欲しい方は電話</div>
-   <a href="tel:0120968631" class="moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+   <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
   </div>
   
@@ -180,7 +186,7 @@
   <div class="moushikomi_button_wrapper wrapper">
    <div class="about_ccus_buttontitle hide_sp">カードが欲しい方は申込み</div>
    <div class="about_ccus_buttontitle hide_pc">もっと知りたい方は電話</div>
-   <a href="tel:0120968631" class="moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+   <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
   </div>
   
@@ -192,10 +198,11 @@
   <div class="faq_wrapper wrapper">
    <div class="faq_qanda">
     <div class="faq_q">
-     <span class="faq_q_char ministry">Q</span> <span class="faq_q_text">個人事業主や一人親方も登録しなければいけない？</span>
+     <span class="faq_q_char ministry">Q</span> <span class="faq_q_text">個人事業主や一人親方も登録しなければいけませんか？</span>
     </div>
     <div class="faq_a">
-     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">はい、建設現場に入る技能者全員の登録が求められています。</span>
+     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">はい。『全員』必要です。<br>
+     登録をしないと入れない現場が増えています。</span>
     </div>
    </div>
    
@@ -204,9 +211,8 @@
      <span class="faq_q_char ministry">Q</span> <span class="faq_q_text">カードはどれくらいで届く？</span>
     </div>
     <div class="faq_a">
-     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">審査開始から約3週間で到着予定です。<br>
-     令和5年以降、審査はますます混み合うことが予想されます。<br>
-     早めの申請をおすすめしています。</span>
+     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">最短３週間です。<br>
+     カードの到着は「先着順」です。お早めにお申し込みください。</span>
     </div>
    </div>
    
@@ -215,8 +221,7 @@
      <span class="faq_q_char ministry">Q</span> <span class="faq_q_text">従業員も登録してもらえる？</span>
     </div>
     <div class="faq_a">
-     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">はい。登録可能です。<br>
-     従業員さんはもちろん、社長、下請けの一人親方さんなどどなたでも登録できます。</span>
+     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">はい。どなたでも登録できます。</span>
     </div>
    </div>
    
@@ -225,9 +230,8 @@
      <span class="faq_q_char ministry">Q</span> <span class="faq_q_text">技能者登録だけでもできる？</span>
     </div>
     <div class="faq_a">
-     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">はい。登録可能です。<br>
-     とにかく現場に入場するためカードだけほしい！という方は技能者登録のみ行うこともできます。<br>
-     （後から事業者登録（事業主としての登録）を行い、紐づけることもできます）</span>
+     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">はい。<br>
+     とにかく現場に入場するためカードだけほしい！という方は技能者登録のみでも大丈夫です。</span>
     </div>
    </div>
    
@@ -236,13 +240,13 @@
      <span class="faq_q_char ministry">Q</span> <span class="faq_q_text">必要な書類がよく分からない</span>
     </div>
     <div class="faq_a">
-     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">ご安心ください。お電話にて女性スタッフが丁寧にご案内します。</span>
+     <span class="faq_a_char ministry">A</span> <span class="faq_a_text">ご安心ください。まずはお電話ください。</span>
     </div>
    </div>
    
    <div class="moushikomi_button_wrapper wrapper">
     <div class="about_ccus_buttontitle hide_pc">質問がある方は電話</div>
-    <a href="tel:0120968631" class="moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+    <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    </div>
   
   </div>
@@ -286,7 +290,7 @@
    </table>
    
    <div class="moushikomi_button_wrapper wrapper">
-    <a href="tel:0120968631" class="moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+    <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
     <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
    </div>
 

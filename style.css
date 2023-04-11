@@ -32,27 +32,36 @@ body{
  color: var(--logo-red);
 }
 .wrapper {
- width: 1100px;
+ width: 1000px;
  max-width: 100%;
  margin: 0 auto;
 }
 
+.tel_button::before {
+ content: '\f095';
+ font-family: 'Font Awesome 5 free';
+ font-weight: bold;
+ margin-right: 10px;
+}
 .moushikomi_button_wrapper {
  display: grid;
  justify-content: center;
  align-items: center;
- margin: 40px auto;
+ margin: clamp(20px, 5vw, 40px) auto;
 }
 .grad_button {
  text-decoration: none;
  background: linear-gradient(to right, #3193AB, #25A999);
  background: -webkit-linear-gradient(left, #3193AB, #25A999);
  background: linear-gradient(to right, #3193AB, #25A999);
- padding: clamp(10px, 4vw, 20px) clamp(80px, 25vw, 130px);
+ padding: clamp(10px, 4vw, 20px) 0;
  color: #fff;
  border-radius: 45px;
+ border: none;
  font-size: clamp(22px, 6vw, 30px);
  margin: 0;
+ text-align: center;
+ width: min(400px, 90vw);
 }
 @media screen and (max-width: 1000px) {
  .grad_button {
@@ -92,11 +101,19 @@ body{
 .kv{
  margin: 0;
  padding: 0;
+ position: relative;
 }
 .kv img {
  width: 100%;
 }
-
+@media screen and (min-width: 1000px) {
+ .pc_kv_overlap {
+  position: absolute;
+  bottom: 10%;
+  left: 17%;
+  margin: 0;
+ }
+}
 
 .ginousya_touroku {
  margin: 60px 0;
@@ -169,7 +186,7 @@ body{
  padding: 100px 0;
 }
 .voice_title {
- font-size: 40px;
+ font-size: clamp(32px, 9vw, 45px);
  font-weight: bold;
  text-align: center;
  line-height: 1.2em;
@@ -226,7 +243,7 @@ body{
 .step_title {
  text-align: center;
  padding: 15px 0;
- font-size: 40px;
+ font-size: clamp(28px, 7vw, 45px);
  line-height: 1.2em;
  font-weight: bold;
 }
@@ -234,14 +251,14 @@ body{
  font-size: 1.2em;
 }
 .step_box_wrapper {
- padding: 35px;
+ padding: 35px clamp(15px, 5vw, 35px);
  display: grid;
  grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr;
  grid-column-gap: 10px;
 }
 .step_box {
  border: 1px solid var(--logo-green);
- padding: 30px;
+ padding: clamp(15px, 5vw, 30px);
  display: grid;
  grid-template-columns: 1fr;
  gap: 20px;
@@ -303,11 +320,13 @@ body{
  }
 }
 
-
+.about_ccus {
+ padding: 100px 0;
+}
 .about_ccus_title {
  text-align: center;
  padding: 15px 0;
- font-size: 40px;
+ font-size: clamp(32px, 9vw, 45px);
  line-height: 1.2em;
  font-weight: bold;
 }
@@ -339,7 +358,7 @@ body{
 .faq_title {
  text-align: center;
  padding: 15px 0;
- font-size: 40px;
+ font-size: clamp(32px, 9vw, 45px);
  line-height: 1.2em;
  font-weight: bold;
 }
@@ -400,7 +419,7 @@ body{
 .about_title {
  text-align: center;
  padding: 15px 0;
- font-size: 40px;
+ font-size: clamp(32px, 9vw, 45px);
  line-height: 1.2em;
  font-weight: bold;
 }

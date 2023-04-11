@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="footer.css" type="text/css">
+<link rel="stylesheet" href="/footer.css" type="text/css">
 
 <footer class="footer">
  <div class="footer_wrapper">

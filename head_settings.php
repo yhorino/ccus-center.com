@@ -9,7 +9,7 @@
 <meta property="og:title" content="<?php echo $title; ?>">
 <meta property="og:type" content="article">
 <meta property="og:url" content="<?php echo $url; ?>">
-<meta property="og:image" content="image/logo.png">
+<meta property="og:image" content="/image/logo.png">
 <meta property="og:site_name" content="<?php echo $title; ?>">
 <meta property="og:description" content="<?php echo $description; ?>">
 <meta name="format-detection" content="telephone=no">
@@ -20,6 +20,6 @@
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-<link rel="stylesheet" href="normalize.css" type="text/css">
-<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="/normalize.css" type="text/css">
+<link rel="stylesheet" href="/style.css" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
