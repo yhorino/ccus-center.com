@@ -8,6 +8,8 @@
 <?php $url = "https://www.ccus-center.com/form/"; ?>
  
 <?php include  $_SERVER['DOCUMENT_ROOT'].'/head_settings.php'; ?>
+<link rel="stylesheet" href="/form/style_form.css" type="text/css">
+ 
 </head>
 
 <body>
@@ -17,92 +19,30 @@
  
  <article class="form_body">
   
-  <form name="form" method="post" action="trans.php" enctype="multipart/form-data">
-  <input type="hidden" id="pagename" name="pagename" value = "index.php">
-   
-  <section class="form_select_section">
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_Nihonkokuseki__c';?>
-    <span class="form_input_title required">日本国籍ですか？</span>
-    <span class="form_input_item">
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_yes" value="はい" >
-     <label for="<?php echo $_itemname;?>_yes">はい</label>
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_no" value="いいえ" >
-     <label for="<?php echo $_itemname;?>_no">いいえ</label>
-    </span>
+  <section class="price">
+   <div class="price_wrapper wrapper">
+    <div class="price_body">
+     <div class="price_body_line1">登録センターなら</div>
+     <div class="price_body_line2">手続き費用が断トツ安い！</div>
+     <div class="price_body_price"><span class="price_large ministry">25,000</span>円（税別）</div>
+     <div class="price_body_info">※ 登録費用は別になります。</div>
+    </div>
    </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_HoujinKojin__c';?>
-    <span class="form_input_title required">登録される方は？</span>
-    <span class="form_input_item">
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_houjin" value="法人" >
-     <label for="<?php echo $_itemname;?>_houjin">法人</label>
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_kojin" value="個人" >
-     <label for="<?php echo $_itemname;?>_kojin">個人</label>
-    </span>
-   </div>
-
-   <div class="form_input_itembox ccus_HoujinKojin__c_kojin">
-    <?php $_itemname='yagou';?>
-    <span class="form_input_title required">屋号がありますか？</span>
-    <span class="form_input_item">
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_yes" value="はい" >
-     <label for="<?php echo $_itemname;?>_yes">はい</label>
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_no" value="いいえ" >
-     <label for="<?php echo $_itemname;?>_no">いいえ</label>
-    </span>
-   </div>
-      
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_Syosaigata__c';?>
-    <span class="form_input_title required">詳細型を希望しますか？</span>
-    <span class="form_input_item">
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_yes" value="はい" >
-     <label for="<?php echo $_itemname;?>_yes">はい</label>
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_no" value="いいえ" >
-     <label for="<?php echo $_itemname;?>_no">いいえ</label>
-    </span>
-   </div>
-   
   </section>
   
+  <form name="form" method="post" action="trans.php" enctype="multipart/form-data" class="form wrapper">
+  <input type="hidden" id="pagename" name="pagename" value = "index.php">
+   
   <section class="form_input_section">
    
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_SyomeisyoURL__c';?>
-    <span class="form_input_title required">証明書添付</span>
-    <span class="form_input_item">
-     <input type="file" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" accept="image/*,.pdf" >
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_SyomeisyoGenjyusyo__c';?>
-    <span class="form_input_title required">証明書の住所は現住所ですか？</span>
-    <span class="form_input_item">
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_yes" value="はい" >
-     <label for="<?php echo $_itemname;?>_yes">はい</label>
-     <input type="radio" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>_no" value="いいえ" >
-     <label for="<?php echo $_itemname;?>_no">いいえ</label>
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_PhotoURL__c';?>
-    <span class="form_input_title required">顔写真添付</span>
-    <span class="form_input_item">
-     <input type="file" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" accept="image/*,.pdf" >
-    </span>
-   </div>
+   <h2 class="form_input_section_title">技能者に登録したい人</h2>
    
    <div class="form_input_itembox">
     <?php $_itemname='ccus_Name';?>
     <span class="form_input_title required">氏名</span>
     <span class="form_input_item">
-     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" >
-     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" >
+     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" placeholder="山田" required>
+     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" placeholder="太郎" required>
     </span>
    </div>
    
@@ -110,357 +50,106 @@
     <?php $_itemname='ccus_NameKana';?>
     <span class="form_input_title required">氏名　ふりがな</span>
     <span class="form_input_item">
-     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" >
-     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" >
-    </span>
-   </div>
-   
-   <div class="form_input_itembox gaikoku">
-    <?php $_itemname='ccus_NameTsusho';?>
-    <span class="form_input_title required">通称名</span>
-    <span class="form_input_item">
-     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" >
-     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" >
+     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" placeholder="やまだ" required>
+     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" placeholder="たろう" required>
     </span>
    </div>
    
    <div class="form_input_itembox">
-    <?php $_itemname='ccus_BloodType__c';?>
-    <span class="form_input_title required">血液型</span>
-    <span class="form_input_item">
-     <select name="<?php echo $_itemname;?>" >
-      <option value="">-選択-</option>
-      <option value="A">A</option>
-      <option value="B">B</option>
-      <option value="O">O</option>
-      <option value="AB">AB</option>
-      <option value="わからない">わからない</option>
-     </select>
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_RenrakusakiSyubetsu__c';?>
-    <span class="form_input_title required">連絡先種別</span>
-    <span class="form_input_item">
-     <select name="<?php echo $_itemname;?>" >
-      <option value="">-選択-</option>
-      <option value="自宅">自宅</option>
-      <option value="携帯">携帯</option>
-      <option value="FAX">FAX</option>
-     </select>
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_RendakusakiNo__c';?>
+    <?php $_itemname='ccus_RenrakusakiNo__c';?>
     <span class="form_input_title required">連絡先番号</span>
     <span class="form_input_item">
-     <input type="tel" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
+     <input type="tel" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" placeholder="090-1111-2222" required>
     </span>
    </div>
    
    <div class="form_input_itembox">
-    <?php $_itemname='ccus_Email__c';?>
+    <?php $_itemname='ccus_Birth__c';?>
+    <span class="form_input_title required">生年月日</span>
+    <span class="form_input_item">
+     <select name="<?php echo $_itemname;?>_year" class="<?php echo $_itemname;?>_year" required>
+      <option value="">-</option>
+      <?php 
+       $now_year = intval(date('Y'));
+       $new_year = $now_year - 15;
+       $old_year = $now_year - 70;
+       for($year = $old_year; $year <= $new_year; $year++){
+        echo '<option value="'.$year.'">'.$year.'</option>';
+       }
+      ?>
+     </select> 年 
+     <select name="<?php echo $_itemname;?>_month" class="<?php echo $_itemname;?>_month" required>
+      <option value="">-</option>
+      <?php 
+       for($month = 1; $month <= 12; $month++){
+        echo '<option value="'.$month.'">'.$month.'</option>';
+       }
+      ?>
+     </select> 月 
+     <select name="<?php echo $_itemname;?>_day" class="<?php echo $_itemname;?>_day" required>
+      <option value="">-</option>
+      <?php 
+       for($day = 1; $day <= 31; $day++){
+        echo '<option value="'.$day.'">'.$day.'</option>';
+       }
+      ?>
+     </select> 日
+    </span>
+   </div>
+   
+  </section>
+
+  <section class="form_input_section">
+   
+   <h2 class="form_input_section_title">担当者</h2>
+   
+   <div class="form_input_itembox">
+    <?php $_itemname='ccus_TantouName';?>
+    <span class="form_input_title required">氏名</span>
+    <span class="form_input_item">
+     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" placeholder="山田" required>
+     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" placeholder="花子" required>
+    </span>
+   </div>
+   
+   <div class="form_input_itembox">
+    <?php $_itemname='ccus_TantouNameKana';?>
+    <span class="form_input_title required">氏名　ふりがな</span>
+    <span class="form_input_item">
+     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" placeholder="やまだ" required>
+     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" placeholder="はなこ" required>
+    </span>
+   </div>
+   
+   <div class="form_input_itembox">
+    <?php $_itemname='ccus_TantouRenrakusakiNo__c';?>
+    <span class="form_input_title required">連絡先番号</span>
+    <span class="form_input_item">
+     <input type="tel" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" placeholder="090-3333-4444" required>
+    </span>
+   </div>
+   
+   <div class="form_input_itembox">
+    <?php $_itemname='ccus_TantouEmail__c';?>
     <span class="form_input_title required">メールアドレス</span>
     <span class="form_input_item">
-     <input type="email" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
+     <input type="email" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" placeholder="name@domain.co.jp" required>
     </span>
    </div>
    
    <div class="form_input_itembox">
-    <?php $_itemname='ccus_CardAddressSame__c';?>
-    <span class="form_input_title required">カード送付先は証明書住所と同じ</span>
-    <span class="form_input_item checkbox">
-     <input type="checkbox" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" value="はい">
-    </span>
-   </div>
-   
-   <div class="form_input_itembox ccus_CardAddressSame__c_no">
-    <?php $_itemname='ccus_CardAddress';?>
-    <span class="form_input_title required">カード送付先住所</span>
+    <?php $_itemname='ccus_Question__c';?>
+    <span class="form_input_title no-required">質問内容</span>
     <span class="form_input_item">
-     <label for="<?php echo $_itemname;?>_Zip__c">郵便番号</label>
-     <input type="tel" name="<?php echo $_itemname;?>_Zip__c" id="<?php echo $_itemname;?>_Zip__c" >
-     <label for="<?php echo $_itemname;?>_Pref__c">都道府県</label>
-     <select name="<?php echo $_itemname;?>_Pref__c" >
-      <option value="">-選択-</option>
-      <option value="北海道">北海道</option>
-     </select>
-     <label for="<?php echo $_itemname;?>_City__c">市区町村</label>
-     <input type="text" name="<?php echo $_itemname;?>_City__c" id="<?php echo $_itemname;?>_City__c" >
-     <label for="<?php echo $_itemname;?>_Address__c">以下住所</label>
-     <input type="text" name="<?php echo $_itemname;?>_Address__c" id="<?php echo $_itemname;?>_Address__c" >
+     <textarea name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" placeholder="質問がありましたら自由にご記入ください。" ></textarea>
     </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_KinkyurenrakusakiName';?>
-    <span class="form_input_title required">緊急連絡先　氏名</span>
-    <span class="form_input_item">
-     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" >
-     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" >
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_KinkyurenrakusakiNameKana';?>
-    <span class="form_input_title required">緊急連絡先　氏名ふりがな</span>
-    <span class="form_input_item">
-     <input type="text" name="<?php echo $_itemname;?>_LastName__c" id="<?php echo $_itemname;?>_LastName__c" >
-     <input type="text" name="<?php echo $_itemname;?>_FirstName__c" id="<?php echo $_itemname;?>_FirstName__c" >
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_KinkyurenrakusakiAddress_Same__c';?>
-    <span class="form_input_title required">緊急連絡先は証明書住所と同じ</span>
-    <span class="form_input_item checkbox">
-     <input type="checkbox" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" value="はい">
-    </span>
-   </div>
-   
-   <div class="form_input_itembox ccus_KinkyurenrakusakiAddress_Same__c_no">
-    <?php $_itemname='ccus_CardAddress';?>
-    <span class="form_input_title required">緊急連絡先住所</span>
-    <span class="form_input_item">
-     <label for="<?php echo $_itemname;?>_Zip__c">郵便番号</label>
-     <input type="tel" name="<?php echo $_itemname;?>_Zip__c" id="<?php echo $_itemname;?>_Zip__c" >
-     <label for="<?php echo $_itemname;?>_Pref__c">都道府県</label>
-     <select name="<?php echo $_itemname;?>_Pref__c" >
-      <option value="">-選択-</option>
-      <option value="北海道">北海道</option>
-     </select>
-     <label for="<?php echo $_itemname;?>_City__c">市区町村</label>
-     <input type="text" name="<?php echo $_itemname;?>_City__c" id="<?php echo $_itemname;?>_City__c" >
-     <label for="<?php echo $_itemname;?>_Address__c">以下住所</label>
-     <input type="text" name="<?php echo $_itemname;?>_Address__c" id="<?php echo $_itemname;?>_Address__c" >
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_KinkyurenrakusakiPhone__c';?>
-    <span class="form_input_title required">緊急連絡先　電話番号</span>
-    <span class="form_input_item">
-     <input type="tel" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_Syokusyu1';?>
-    <span class="form_input_title required">職種１</span>
-    <span class="form_input_item">
-     <label for="<?php echo $_itemname;?>Daibunrui__c">大分類</label>
-     <select name="<?php echo $_itemname;?>Daibunrui__c" onchange="filter_syobunrui(1);">
-      <?php
-       include_once('gyosyulist.php');
-       create_gyosyudaibunruioption_html();
-      ?>
-     </select>
-     <label for="<?php echo $_itemname;?>Syobunrui__c">小分類</label>
-     <select name="<?php echo $_itemname;?>Syobunrui__c" >
-      <?php
-       include_once('gyosyulist.php');
-       create_gyosyusyobunruioption_html();
-      ?>
-     </select>
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_Kenkohoken__c';?>
-    <span class="form_input_title required">健康保険</span>
-    <span class="form_input_item">
-     <select name="<?php echo $_itemname;?>" >
-      <option value="">-選択-</option>
-      <option value="有">有</option>
-      <option value="無">無</option>
-      <option value="わからない">わからない</option>
-     </select>
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_Nenkinhoken__c';?>
-    <span class="form_input_title required">年金保険</span>
-    <span class="form_input_item">
-     <select name="<?php echo $_itemname;?>" >
-      <option value="">-選択-</option>
-      <option value="有">有</option>
-      <option value="無">無</option>
-      <option value="わからない">わからない</option>
-     </select>
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_Koyohoken__c';?>
-    <span class="form_input_title required">雇用保険</span>
-    <span class="form_input_item">
-     <select name="<?php echo $_itemname;?>" >
-      <option value="">-選択-</option>
-      <option value="有">有</option>
-      <option value="無">無</option>
-      <option value="わからない">わからない</option>
-     </select>
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_Kentaikyo__c';?>
-    <span class="form_input_title required">建設業退職金共済制度</span>
-    <span class="form_input_item">
-     <select name="<?php echo $_itemname;?>" >
-      <option value="">-選択-</option>
-      <option value="有">有</option>
-      <option value="無">無</option>
-      <option value="わからない">わからない</option>
-     </select>
-    </span>
-   </div>
-   
-   <div class="form_input_itembox">
-    <?php $_itemname='ccus_ChushokigyoTaisyoku__c';?>
-    <span class="form_input_title required">中小企業退職金共済制度</span>
-    <span class="form_input_item">
-     <select name="<?php echo $_itemname;?>" >
-      <option value="">-選択-</option>
-      <option value="有">有</option>
-      <option value="無">無</option>
-      <option value="わからない">わからない</option>
-     </select>
-    </span>
-   </div>
-   
-   <div class="ccus_HoujinKojin__c_houjin">
-    
-    <div class="form_input_itembox">
-     <?php $_itemname='ccus_JigyosyaName__c';?>
-     <span class="form_input_title required">事業者名</span>
-     <span class="form_input_item">
-      <input type="text" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
-     </span>
-    </div>
-
-    <div class="form_input_itembox">
-     <?php $_itemname='ccus_JigyosyoAddress';?>
-     <span class="form_input_title required">事業所住所</span>
-     <span class="form_input_item">
-      <label for="<?php echo $_itemname;?>_Zip__c">郵便番号</label>
-      <input type="tel" name="<?php echo $_itemname;?>_Zip__c" id="<?php echo $_itemname;?>_Zip__c" >
-      <label for="<?php echo $_itemname;?>_Pref__c">都道府県</label>
-      <select name="<?php echo $_itemname;?>_Pref__c" >
-       <option value="">-選択-</option>
-       <option value="北海道">北海道</option>
-      </select>
-      <label for="<?php echo $_itemname;?>_City__c">市区町村</label>
-      <input type="text" name="<?php echo $_itemname;?>_City__c" id="<?php echo $_itemname;?>_City__c" >
-      <label for="<?php echo $_itemname;?>_Address__c">以下住所</label>
-      <input type="text" name="<?php echo $_itemname;?>_Address__c" id="<?php echo $_itemname;?>_Address__c" >
-     </span>
-    </div>
-
-    <div class="form_input_itembox">
-     <?php $_itemname='ccus_JigyosyoEmail__c';?>
-     <span class="form_input_title required">メールアドレス</span>
-     <span class="form_input_item">
-      <input type="email" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
-     </span>
-    </div>
-
-    <div class="form_input_itembox">
-     <?php $_itemname='ccus_JigyosyoKoyokeitai__c';?>
-     <span class="form_input_title required">雇用形態</span>
-     <span class="form_input_item">
-      <select name="<?php echo $_itemname;?>" >
-       <option value="">-選択-</option>
-       <option value="常時雇用">常時雇用</option>
-       <option value="臨時雇用">臨時雇用</option>
-       <option value="建設業労務労働者就業機会確保事業に基づく雇用">建設業労務労働者就業機会確保事業に基づく雇用</option>
-      </select>
-     </span>
-    </div>
-
-    <div class="form_input_itembox">
-     <?php $_itemname='ccus_JigyosyoKoyoDate__c';?>
-     <span class="form_input_title required">雇用年月日</span>
-     <span class="form_input_item">
-      <input type="date" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
-     </span>
-    </div>
-
-   </div>
-   
-   <div class="ccus_HoujinKojin__c_kojin">
-    
-    <div class="form_input_itembox yagou_yes">
-     <?php $_itemname='ccus_JigyosyaYagou__c';?>
-     <span class="form_input_title required">屋号</span>
-     <span class="form_input_item">
-      <input type="text" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
-     </span>
-    </div>
-    
-    <div class="form_input_itembox yagou_no">
-     <?php $_itemname='ccus_JigyosyaDaihyosyaName__c';?>
-     <span class="form_input_title required">代表者名</span>
-     <span class="form_input_item">
-      <input type="text" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
-     </span>
-    </div>
-    
-   </div>
-   
-   <div class="ccus_Syosaigata__c_yes">
-    
-    <div class="form_input_itembox">
-     <?php $_itemname='ccus_SyosaigataTokubetsukanyu__c';?>
-     <span class="form_input_title required">労災特別加入</span>
-     <span class="form_input_item">
-      <select name="<?php echo $_itemname;?>" >
-       <option value="">-選択-</option>
-       <option value="RJCで加入">RJCで加入</option>
-       <option value="別団体で加入">別団体で加入</option>
-       <option value="加入していない">加入していない</option>
-       <option value="わからない">わからない</option>
-      </select>
-     </span>
-    </div>
-
-    <div class="form_input_itembox">
-     <?php $_itemname='ccus_SyosaigataKenshin__c';?>
-     <span class="form_input_title required">健康診断を過去１年に受診（じん肺健康診断は３年以内）しましたか？</span>
-     <span class="form_input_item">
-      <select name="<?php echo $_itemname;?>" >
-       <option value="">-選択-</option>
-       <option value="はい">はい</option>
-       <option value="いいえ">いいえ</option>
-       <option value="わからない">わからない</option>
-      </select>
-     </span>
-    </div>
-
-    <div class="form_input_itembox ccus_SyosaigataKenshin__c_yes">
-     <?php $_itemname='ccus_SyosaigataKenshinDate__c';?>
-     <span class="form_input_title required">受診日</span>
-     <span class="form_input_item">
-      <input type="date" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
-     </span>
-    </div>
-
-    <div class="form_input_itembox">
-     <?php $_itemname='ccus_SyosaigataKenshinName__c';?>
-     <span class="form_input_title required">健康診断種別名</span>
-     <span class="form_input_item">
-      <input type="text" name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" >
-     </span>
-    </div>
-    
    </div>
    
   </section>
    
-  <input type="submit" value="申込する">
+  <div class="submit_box">
+   <input type="submit" value="申込する" class="submit_button grad_button">
+  </div>
    
   </form>
   
