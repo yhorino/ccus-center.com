@@ -50,6 +50,9 @@
 
 @media screen and (max-width: 1000px) {
  
+ .header_wrapper{
+  display: none;
+ }
  .header_logo {
   margin: 0 auto;
  }

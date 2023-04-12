@@ -115,8 +115,14 @@
    
    <div class="step_box">
     <span class="step_box_title"><span class="step_box_number">1</span> お問い合わせ</span>
-    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
-    <span class="step_box_body">または、お電話（0120-968-631）</span>
+    
+    <div class="moushikomi_button_wrapper in_box">
+
+     <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
+     <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
+    </div>
+    
+    <span class="step_box_body hide_sp">または、お電話（0120-968-631）</span>
    </div>
    <div class="step_arrow">
     <img src="/img/ic_arrow_r_green.png" alt="" class="hide_sp">
@@ -125,8 +131,10 @@
 
    <div class="step_box">
     <span class="step_box_title"><span class="step_box_number">2</span> ご相談・ご案内</span>
-    <span class="step_box_body">・申請に関するご相談</span>
-    <span class="step_box_body">・契約・同意書にサイン</span>
+    <div class="step_box_body">
+     <span class="step_box_body_item"><span class="green_dot"></span>申請に関するご相談</span>
+     <span class="step_box_body_item"><span class="green_dot"></span>契約・同意書にサイン</span>
+    </div>
    </div>
    <div class="step_arrow">
     <img src="/img/ic_arrow_r_green.png" alt="" class="hide_sp">
@@ -174,7 +182,7 @@
    </div>
    <img src="img/ic_ccuslogo.png" alt="ccus" class="logoline_logo">
   </div>
-  <div class="about_ccus_title"><span class="green_text">今さら聞きづらい</span><br><span class="about_ccus_title_large">建設キャリアアップシステムとは</span></div>
+  <div class="about_ccus_title"><span class="green_text">今さら聞きづらい</span><br><span class="about_ccus_title_large">建設キャリアアップ<br class="hide_pc">システムとは</span></div>
   
   <div class="about_ccus_wrapper wrapper">
    <p>CCUSは建設キャリアアップシステムのことです。</p>
@@ -193,7 +201,7 @@
  </div>
 
  <div class="faq">
-  <div class="faq_title"><span class="faq_title_large">よくあるご質問</span></div>
+  <div class="faq_title">よくあるご質問</div>
   
   <div class="faq_wrapper wrapper">
    <div class="faq_qanda">
@@ -254,7 +262,7 @@
  </div>
 
  <div class="about">
-  <div class="about_title"><span class="about_title_large">運営会社</span></div>
+  <div class="about_title">運営会社</div>
   
   <div class="about_wrapper wrapper">
    
@@ -284,8 +292,8 @@
      <td>平成4年7月</td>
     </tr>
     <tr>
-     <th>関連団体</th>
-     <td><a href="https://www.xn--4gqprf2ac7ft97aryo6r5b3ov.tokyo/">一人親方労災保険RJC</a><br><a href="https://www.xn--y5q0r2lqcz91qdrc.com/">中小事業主の特別加入RJC</a></td>
+     <th>関連サイト</th>
+     <td><a href="https://www.xn--4gqprf2ac7ft97aryo6r5b3ov.tokyo/">一人親方労災保険.tokyo</a><br><a href="https://www.xn--y5q0r2lqcz91qdrc.com/">労災特別加入.com</a></td>
     </tr>
    </table>
    
