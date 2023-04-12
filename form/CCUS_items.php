@@ -37,23 +37,24 @@ class CCUS_items{
  function web2case() {
   
  /* 本番 */
-  /*
  $url = 'https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8';
  // Salesforceの組織ID
  $oid = '00D7F0000001NoF';
-  */
-
+ $recordtypeID = '012BV0000004KXf';
+  
  /* Sandbox */
+  /*
  $url = 'https://d7f0000001nofuau--ccus.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8';
  // Salesforceの組織ID
  $oid = '00DAz000000HHxJ';
-
+ $recordtypeID = '012Az0000000r17';
+*/
   $fields = array(
 
   // Salesforceへのパラメーター
   'orgid' => $oid,
   'retURL' => '',
-  'recordType'=>'012Az0000000r17',
+  'recordType'=> $recordtypeID,
   'ccus_Name_LastName__c'=>$this->ccus_Name_LastName__c,
   'ccus_Name_FirstName__c'=>$this->ccus_Name_FirstName__c,
   'ccus_NameKana_LastName__c'=>$this->ccus_NameKana_LastName__c,
