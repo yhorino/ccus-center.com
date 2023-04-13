@@ -74,27 +74,27 @@
    <div class="voice_items">
     <div class="voice_item">
      <div class="voice_balloon">安い</div>
-     <div class="voice_body">思っていたより、断トツに安かった！</div>
+     <div class="voice_body">思っていたより、<br class="hide_sp">断トツに安かった！</div>
     </div>
     <div class="voice_item">
      <div class="voice_balloon">早い</div>
-     <div class="voice_body">急ぎでカードが欲しかった、ここだとすぐにカードがもらえた！</div>
+     <div class="voice_body">急ぎでカードが欲しかった、<br class="hide_sp">ここだとすぐにカードがもらえた！</div>
     </div>
     <div class="voice_item">
      <div class="voice_balloon">安心</div>
-     <div class="voice_body">建設業専門だから安心して依頼できた、確実にカードが欲しいならここ！</div>
+     <div class="voice_body">建設業専門だから<br class="hide_sp">安心して依頼できた、<br class="hide_sp">確実にカードが欲しいならここ！</div>
     </div>
     <div class="voice_item">
      <div class="voice_balloon">丁寧</div>
-     <div class="voice_body">女性の行政書士が丁寧に対応、すべてお任せできて楽だった！</div>
+     <div class="voice_body">女性の行政書士が丁寧に対応、<br class="hide_sp">すべてお任せできて楽だった！</div>
     </div>
    </div>
    
   </div>
   
   <div class="moushikomi_button_wrapper wrapper">
-   <div class="voice_buttontitle hide_sp">急ぎの方はまずは申込み</div>
-   <div class="voice_buttontitle hide_pc">急ぎの方はまずは電話</div>
+   <div class="voice_buttontitle button_title hide_sp">急ぎの方はまずは申込み</div>
+   <div class="voice_buttontitle button_title hide_pc">急ぎの方はまずは電話</div>
    <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
   </div>
@@ -122,7 +122,7 @@
      <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
     </div>
     
-    <span class="step_box_body hide_sp">または、お電話（0120-968-631）</span>
+    <span class="step_box_body hide_sp">または、お電話(0120-968-631)</span>
    </div>
    <div class="step_arrow">
     <img src="/img/ic_arrow_r_green.png" alt="" class="hide_sp">
@@ -166,8 +166,8 @@
   </div>
   
   <div class="moushikomi_button_wrapper wrapper">
-   <div class="step_buttontitle hide_sp">カードが欲しい方は申込み</div>
-   <div class="step_buttontitle hide_pc">カードが欲しい方は電話</div>
+   <div class="step_buttontitle button_title hide_sp">カードが欲しい方は申込み</div>
+   <div class="step_buttontitle button_title hide_pc">カードが欲しい方は電話</div>
    <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
   </div>
@@ -192,8 +192,8 @@
   </div>
   
   <div class="moushikomi_button_wrapper wrapper">
-   <div class="about_ccus_buttontitle hide_sp">カードが欲しい方は申込み</div>
-   <div class="about_ccus_buttontitle hide_pc">もっと知りたい方は電話</div>
+   <div class="about_ccus_buttontitle button_title hide_sp">カードが欲しい方は申込み</div>
+   <div class="about_ccus_buttontitle button_title hide_pc">もっと知りたい方は電話</div>
    <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    <a href="/form/" class="moushikomi_button grad_button">Webで申込み</a>
   </div>
@@ -253,7 +253,7 @@
    </div>
    
    <div class="moushikomi_button_wrapper wrapper">
-    <div class="about_ccus_buttontitle hide_pc">質問がある方は電話</div>
+    <div class="about_ccus_buttontitle button_title hide_pc">質問がある方は電話</div>
     <a href="tel:0120968631" class="tel_button moushikomi_button grad_button hide_pc">電話で聞きたい</a>
    </div>
   

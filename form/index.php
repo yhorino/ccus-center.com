@@ -67,7 +67,7 @@
     <?php $_itemname='ccus_Birth__c';?>
     <span class="form_input_title required">生年月日</span>
     <span class="form_input_item">
-     <select name="<?php echo $_itemname;?>_year" class="<?php echo $_itemname;?>_year" required>
+     <select name="<?php echo $_itemname;?>_year" id="<?php echo $_itemname;?>_year" required>
       <option value="">-</option>
       <?php 
        $now_year = intval(date('Y'));
@@ -78,7 +78,7 @@
        }
       ?>
      </select> 年 
-     <select name="<?php echo $_itemname;?>_month" class="<?php echo $_itemname;?>_month" required>
+     <select name="<?php echo $_itemname;?>_month" id="<?php echo $_itemname;?>_month" required>
       <option value="">-</option>
       <?php 
        for($month = 1; $month <= 12; $month++){
@@ -86,7 +86,7 @@
        }
       ?>
      </select> 月 
-     <select name="<?php echo $_itemname;?>_day" class="<?php echo $_itemname;?>_day" required>
+     <select name="<?php echo $_itemname;?>_day" id="<?php echo $_itemname;?>_day" required>
       <option value="">-</option>
       <?php 
        for($day = 1; $day <= 31; $day++){

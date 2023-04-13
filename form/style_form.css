@@ -87,8 +87,20 @@
 .form_input_item textarea {
  height: 8em;
 }
-.ccus_Birth__c_year {
- min-width: 6em;
+#ccus_RenrakusakiNo__c {
+ width: 8em;
+}
+#ccus_Birth__c_year {
+ width: 6em;
+}
+#ccus_Birth__c_month {
+ width: 5em;
+}
+#ccus_Birth__c_day {
+ width: 5em;
+}
+#ccus_TantouRenrakusakiNo__c {
+ width: 8em;
 }
 
 .submit_box {
@@ -113,4 +125,8 @@
 
 .done_body {
     padding: 0 15px;
+}
+
+.tel_ccus{
+ font-size: 25px;
 }
