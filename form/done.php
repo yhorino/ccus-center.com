@@ -22,11 +22,11 @@
    <h2 class="done_title form_input_section_title">CCUS申込をしました。</h2>
    <div class="done_body">
     <p>ご入力いただいた担当者メールアドレスへメールを送信いたしました。</p>
-    <p>３分以内にメールが届かない場合は、<a href="tel:0120968631">0120-968-631</a>へご連絡願います。</p>
+    <p>お申込みについて詳しくお伺いしますので、<a href="tel:0120968631">0120-968-631</a>へご連絡ください。</p>
    </div>
    
    <div class="submit_box">
-    <a href="/" class="done_totop grad_button">トップページへ</a>
+    <a href="tel:0120968631" class="tel_ccus grad_button">0120-968-631に電話する</a>
    </div>
    
   </section>

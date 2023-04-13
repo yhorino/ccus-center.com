@@ -54,20 +54,25 @@ body{
  grid-row-gap: 10px;
  grid-template-columns: 1fr;
 }
-
+.button_title{
+ margin-bottom: 10px;
+ text-align: center;
+ font-size: 28px;
+ font-weight: bold;
+}
 .grad_button {
  text-decoration: none;
  background: linear-gradient(to right, #3193AB, #25A999);
  background: -webkit-linear-gradient(left, #3193AB, #25A999);
  background: linear-gradient(to right, #3193AB, #25A999);
- padding: clamp(10px, 4vw, 20px) 0;
+ padding: 20px 0;
  color: #fff;
  border-radius: 45px;
  border: none;
  font-size: clamp(22px, 6vw, 30px);
  margin: 0;
  text-align: center;
- width: min(400px, 90vw);
+ width: min(440px, 90vw);
 }
 @media screen and (max-width: 1000px) {
  .grad_button {
@@ -117,8 +122,15 @@ body{
  .pc_kv_overlap {
   position: absolute;
   bottom: 10%;
-  left: 17%;
+  left: 33%;
   margin: 0;
+  justify-content: start;
+ }
+ .pc_kv_overlap .grad_button{
+  padding: 1vw 0;
+  font-size: clamp(16px, 2vw, 30px);
+  width: 21vw;
+  font-weight: normal;
  }
 }
 
@@ -157,8 +169,9 @@ body{
 
 .isogi {
  background-image: url(/img/bg_att_pc.png);
- aspect-ratio: 1920/500;
+ /*aspect-ratio: 1920/500;*/
  padding: 40px 0;
+ background-size: 100%;
 }
 .isogi_wrapper {
  display: grid;
@@ -183,7 +196,7 @@ body{
 @media screen and (max-width: 1000px) {
  .isogi {
   background-image: url(/img/bg_att_sp.png);
-  aspect-ratio: 700/900;
+  /*aspect-ratio: 700/900;*/
   padding: 30px 0;
  }
 }
@@ -230,7 +243,7 @@ body{
  background-position: bottom;
 }
 .voice_body {
- font-size: 22px;
+ font-size: 20px;
 }
 .voice_buttontitle {
  text-align: center;
@@ -252,7 +265,7 @@ body{
 .step_title {
  text-align: center;
  padding: 15px 0;
- font-size: clamp(22px, 5vw, 45px);
+ font-size: clamp(22px, 5vw, 40px);
  line-height: 1.2em;
  font-weight: bold;
 }
@@ -263,16 +276,18 @@ body{
 .step_box_wrapper {
  padding: 35px clamp(15px, 5vw, 35px);
  display: grid;
- grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr;
+ grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 12em;
  grid-column-gap: 10px;
 }
 .step_box {
  border: 2px solid var(--logo-green);
  border-radius: 5px;
- padding: clamp(15px, 5vw, 30px);
+ padding: clamp(15px, 5vw, 29px);
  display: grid;
  grid-template-columns: 1fr;
  gap: 15px;
+ grid-template-rows: 3em 1fr;
+ align-items: start;
 }
 .step_box_title {
  font-size: 30px;
@@ -287,6 +302,7 @@ body{
  display: grid;
  grid-template-rows: 1.4em;
  grid-row-gap: 5px;
+ font-size: 18px;
 }
 .step_box_body_item {
  display: grid;
@@ -339,6 +355,18 @@ body{
  font-weight: bold;
 }
 
+@media screen and (max-width: 1900px) {
+ .step_box_wrapper {
+  grid-template-columns: 1fr 40px 1fr 40px 1fr 40px;
+  grid-row-gap: 30px;
+ }
+}
+@media screen and (max-width: 1200px) {
+ .step_box_wrapper {
+  grid-template-columns: 1fr 40px 1fr 40px;
+  grid-row-gap: 30px;
+ }
+}
 @media screen and (max-width: 1000px) {
  .step_box_wrapper {
   grid-template-columns: 1fr;
@@ -358,12 +386,12 @@ body{
 }
 
 .about_ccus {
- padding: 100px 0;
+ padding: 80px 0;
 }
 .about_ccus_title {
  text-align: center;
  padding: 15px 0;
- font-size: clamp(22px, 5vw, 45px);
+ font-size: clamp(22px, 5vw, 40px);
  line-height: 1.2em;
  font-weight: bold;
 }
@@ -373,6 +401,7 @@ body{
 }
 .about_ccus_wrapper {
  text-align: center;
+ font-size: 22px;
 }
 .about_ccus_wrapper p {
  margin: 0;
@@ -392,7 +421,7 @@ body{
 }
 
 .faq {
- padding: 0 0 80px 0;
+ padding: 0 0 60px 0;
 }
 .faq_title {
  text-align: center;
@@ -460,6 +489,10 @@ body{
 
 .about {
 }
+.about_table {
+ width: calc(100% - 30px);
+ margin: 0 auto;
+}
 .about_title {
  text-align: center;
  padding: 15px 0;
@@ -469,10 +502,6 @@ body{
 }
 .about_title_large{
  font-size: 1.2em;
-}
-.about_table {
- width: 90%;
- margin: 5%;
 }
 .about_table td {
  border-top: 1px solid #D1D1D1;
