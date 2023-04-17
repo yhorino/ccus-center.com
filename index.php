@@ -2,9 +2,9 @@
 <html>
 <head>
 <?php include  $_SERVER['DOCUMENT_ROOT'].'/gtag_head.php'; ?>
-<?php $title = "CCUS"; ?>
-<?php $description = "CCUSサイト"; ?>
-<?php $keyword = "CCUS,ccus"; ?>
+<?php $title = "断トツ安い！　全国建設キャリアアップ登録センター（CCUS）"; ?>
+<?php $description = "全国建設キャリアアップ登録　断トツ安い代行申請　技能者登録　手続き費用が断トツ安い！　25,000円　Webで申込み"; ?>
+<?php $keyword = "CCUS,ccus,建設キャリアアップ登録,技能者登録,事業者登録"; ?>
 <?php $url = "https://www.ccus-center.com"; ?>
  
 <?php include  $_SERVER['DOCUMENT_ROOT'].'/head_settings.php'; ?>
