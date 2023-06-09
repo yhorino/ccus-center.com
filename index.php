@@ -10,7 +10,7 @@
 <?php include  $_SERVER['DOCUMENT_ROOT'].'/head_settings.php'; ?>
 </head>
 
-<body>
+<body id="index_php">
  <?php include  $_SERVER['DOCUMENT_ROOT'].'/gtag_body.php'; ?>
 
  <?php include  $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>

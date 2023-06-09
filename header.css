@@ -12,6 +12,11 @@
  justify-content: space-between;
 }
 
+.header_logo_link {
+    text-decoration: none;
+    color: #000;
+}
+
 .header_logo {
  display: grid;
  grid-template-columns: 35px 1fr;
@@ -26,7 +31,7 @@
  width: 100%;
 }
 .header_logo_name {
- padding-top: 5px;
+ /*padding-top: 5px;*/
  line-height: 30px;
 }
 
@@ -50,8 +55,11 @@
 
 @media screen and (max-width: 1000px) {
  
- .header_wrapper{
+ #index_php .header_wrapper{
   display: none;
+ }
+ .header_wrapper{
+  justify-content: center;
  }
  .header_logo {
   margin: 0 auto;
