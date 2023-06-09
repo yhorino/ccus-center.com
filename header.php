@@ -2,10 +2,12 @@
 
 <header class="header">
  <div class="header_wrapper">
+  <a href="/" class="header_logo_link">
   <div class="header_logo">
    <img src="/img/ic_ccus.png" alt="ccus" class="header_logo_img">
    <span class="header_logo_name">全国建設キャリアアップ登録センター</span>
   </div>
+  </a>
   <div class="header_phone hide_sp">
    <a href="tel:0120968631" class="header_phone_link">
    <img src="/img/ic_tel.png" alt="freedial" class="header_phone_freedialimg">
