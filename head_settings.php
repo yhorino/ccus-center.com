@@ -1,5 +1,5 @@
  
-<?php include $_SERVER['DOCUMENT_ROOT'].'ministry.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/ministry.php'; ?>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
