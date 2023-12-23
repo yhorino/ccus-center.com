@@ -14,7 +14,10 @@
 <body>
  <?php include  $_SERVER['DOCUMENT_ROOT'].'/gtag_body.php'; ?>
 
- <?php include  $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+ <?php 
+ $option_class = 'no_menu';
+ include_once $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/cocoon-child-master/tmp/header-container.php'; 
+ ?>
  
  <article class="form_body">
   
