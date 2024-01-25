@@ -79,7 +79,7 @@
       <?php 
        $now_year = intval(date('Y'));
        $new_year = $now_year - 15;
-       $old_year = $now_year - 70;
+       $old_year = $now_year - 80;
        for($year = $old_year; $year <= $new_year; $year++){
         echo '<option value="'.$year.'">'.$year.'</option>';
        }
