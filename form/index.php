@@ -26,6 +26,7 @@
  
  <article class="form_body">
   
+  <!--
   <section class="price">
    <div class="price_wrapper wrapper">
     <div class="price_body">
@@ -36,6 +37,7 @@
     </div>
    </div>
   </section>
+  -->
   
   <form name="form" method="post" action="trans.php" enctype="multipart/form-data" class="form wrapper">
   <input type="hidden" id="pagename" name="pagename" value = "index.php">
