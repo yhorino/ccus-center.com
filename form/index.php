@@ -145,6 +145,21 @@
    </div>
    
    <div class="form_input_itembox">
+    <?php $_itemname='ccus_Naniwomite__c';?>
+    <span class="form_input_title required">建設キャリアアップシステム登録センターを何で知りましたか？</span>
+    <span class="form_input_item">
+     <select name="<?php echo $_itemname;?>" id="<?php echo $_itemname;?>" required>
+      <option value="">- 選択してください -</option>
+      <option value="SNS（Instagram・Facebook）">SNS（Instagram・Facebook）</option>
+      <option value="ネットで検索">ネットで検索</option>
+      <option value="LINE">LINE</option>
+      <option value="チラシ・はがき">チラシ・はがき</option>
+      <option value="その他">その他</option>
+     </select>
+    </span>
+   </div>
+   
+   <div class="form_input_itembox">
     <?php $_itemname='ccus_Question__c';?>
     <span class="form_input_title no-required">質問内容</span>
     <span class="form_input_item">
@@ -155,7 +170,7 @@
   </section>
    
            
-          <section class="mitsumori-regulation" id="regulation" style="display: none;">
+          <section class="mitsumori-regulation" id="regulation">
             <h2 class="mitsumori-regulation_ttl">注意事項</h2>
             <div id="regulation_box" onSelectStart = "return false;" onMouseDown = "return false;" style = "-moz-user-select: none; -khtml-user-select: none; user-select: none;">
               <div class="mitsumori-regulation_box">
@@ -183,6 +198,36 @@ RJCグループが個人データを共同利用している提携先企業は�
 （お客さまの情報のRJCグループでの共同利用に関するお問い合わせ窓口）
 【電話番号】　0568－27－7555
 【受付時間】　平日　午前９時00分～午後5時00分
+
+</pre>
+<p style='text-align: right;'>作成及び使用開始；20240124</p>
+              </div>
+            </div>
+          </section>
+   
+          <section class="mitsumori-regulation" id="regulation">
+            <h2 class="mitsumori-regulation_ttl">確認事項及び誓約書</h2>
+            <div id="regulation_box" onSelectStart = "return false;" onMouseDown = "return false;" style = "-moz-user-select: none; -khtml-user-select: none; user-select: none;">
+              <div class="mitsumori-regulation_box">
+              
+<h4>〈建設キャリアアップシステム申請代行に関する確認事項及び誓約書〉</h4>
+<pre style="white-space: pre-wrap ;">
+このたび、建設キャリアアップシステム申請代行を委託するにあたり、下記事項を確認し遵守することを誓約いたします。
+
+１．私（当社）は、貴事務所の定めた誓約書を遵守いたします。 
+２．委託する業務は建設キャリアアップシステムに係る申請・手続の代行であり、サービスの提供条件等については建設キャリアアップシステム利用規約へ同意することを確認しました。
+３．新規登録申請を依頼する事業者、技能者に関して、過去に建設キャリアアップシステムへ登録した事実はありません。
+４．パスワードは各事業者、技能者の責任において管理し、手続完了後は速やかにパスワードを変更することを了承しました。
+５．委託した手続は、手続費用の振込を貴事務所が確認後、開始されることを理解しました。 
+６．手続開始後、技能者の退社など委託者の都合によるキャンセルは行いません。
+７．手続き費用について一切の返金が行われないことを確認しました。
+８．手続費用の振込が確認できなかったときは、私からの委託解除の意思表示とみなされ直ちに委託解除されることを理解しました。
+９．私は、反社会的勢力（暴力団、暴力団員、暴力団員でなくなった時から５年を経過しない者、暴力団準構成員、暴力団関係企業、総会屋等、社会運動等標ぼうゴロ又は特殊知能暴力集団、その他これらに準ずる者をいう）に属する者ではなく、貴団体との契約において暴力的な要求行為等を行いません。
+１０．その他貴事務所に損害を与える行為をしないことをここに誓約いたします。
+１１．本業務委託の有効期間は本日より６０日間です。委託者の都合により有効期間を超える場合は、新たに本確認書を締結する必要があります。
+
+
+お手続き費用のお振込みをいただくことにより、本誓約書にご同意いただいたものとみなします。
 
 </pre>
 <p style='text-align: right;'>作成及び使用開始；20240124</p>

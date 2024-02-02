@@ -14,6 +14,7 @@ class CCUS_items{
  private $ccus_TantouRenrakusakiNo__c;
  private $ccus_TantouEmail__c;
  private $ccus_Question__c;
+ private $ccus_Naniwomite__c;
 
  function __construct($post){
   $this->ccus_Name_LastName__c=htmlspecialchars($post["ccus_Name_LastName__c"], ENT_QUOTES);
@@ -29,6 +30,7 @@ class CCUS_items{
   $this->ccus_TantouRenrakusakiNo__c=htmlspecialchars($post["ccus_TantouRenrakusakiNo__c"], ENT_QUOTES);
   $this->ccus_TantouEmail__c=htmlspecialchars($post["ccus_TantouEmail__c"], ENT_QUOTES);
   $this->ccus_Question__c=htmlspecialchars($post["ccus_Question__c"], ENT_QUOTES);
+  $this->ccus_Naniwomite__c=htmlspecialchars($post["ccus_Naniwomite__c"], ENT_QUOTES);
   
   var_dump($this);
  }
@@ -76,6 +78,7 @@ $recordtypeID = '012BV0000004KXf';
   'ccus_TantouRenrakusakiNo__c'=>$this->ccus_TantouRenrakusakiNo__c,
   'ccus_TantouEmail__c'=>$this->ccus_TantouEmail__c,
   'ccus_Question__c'=>$this->ccus_Question__c,
+  'ccus_Naniwomite__c'=>$this->ccus_Naniwomite__c,
 
   //'debug' => '1',
   //'debugEmail' => urlencode("xxx@xxxx"),
