@@ -1,0 +1,68 @@
+/* CSS Document */
+
+.header{
+ border-top: 10px solid var(--accent-green);
+}
+
+.header_wrapper {
+ width: 1000px;
+ max-width: 100%;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+}
+
+.header_logo_link {
+    text-decoration: none;
+    color: #000;
+}
+
+.header_logo {
+ display: grid;
+ grid-template-columns: 35px 1fr;
+ align-items: center;
+ grid-column-gap: 5px;
+ font-size: clamp(16px, 5vw, 35px);
+ padding: 30px 0;
+ font-weight: bold;
+}
+
+.header_logo_img {
+ width: 100%;
+}
+.header_logo_name {
+ /*padding-top: 5px;*/
+ line-height: 30px;
+}
+
+.header_phone_link {
+ color: var(--accent-red);
+ text-decoration: none;
+ font-size: 35px;
+ font-weight: bold;
+ display: grid;
+ grid-template-columns: 45px 1fr;
+ align-items: center;
+ grid-column-gap: 10px;
+}
+
+.header_phone {
+ display: grid;
+ grid-template-rows: 40px 16px;
+ padding: 15px 0;
+ justify-content: end;
+}
+
+@media screen and (max-width: 1000px) {
+ 
+ #index_php .header_wrapper{
+  display: none;
+ }
+ .header_wrapper{
+  justify-content: center;
+ }
+ .header_logo {
+  margin: 0 auto;
+ }
+ 
+}
