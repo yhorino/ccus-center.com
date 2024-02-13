@@ -1,0 +1,17 @@
+[WP STAGING Shutdown Function][E_ERROR][2023-12-23 12:35:46] Uncaught Error: Call to undefined function cdp_vars() in /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-content/plugins/copy-delete-posts/copy-delete-posts.php:595
+Stack trace:
+#0 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-includes/class-wp-hook.php(310): {closure}()
+#1 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#2 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-includes/general-template.php(3069): do_action()
+#4 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-content/themes/cocoon-master/footer.php(96): wp_footer()
+#5 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-includes/template.php(785): require_once('...')
+#6 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-includes/template.php(720): load_template()
+#7 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-includes/general-template.php(92): locate_template()
+#8 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-content/themes/cocoon-master/page.php(21): get_footer()
+#9 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-includes/template-loader.php(106): include('...')
+#10 /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-blog-header.php(19): require_once('...')
+#11 /home/rjc/domains/ccus-center.com/public_html/ccus-test/index.php(17): require('...')
+#12 {main}
+  thrown - File: /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-content/plugins/copy-delete-posts/copy-delete-posts.php Line: 595 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_PARSE][2023-12-23 12:45:06] syntax error, unexpected single-quoted string "/home/rjc/domains/ccus-center...." - File: /home/rjc/domains/ccus-center.com/public_html/ccus-test/wp-content/themes/cocoon-child-master/tmp/header-container.php Line: 88 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No

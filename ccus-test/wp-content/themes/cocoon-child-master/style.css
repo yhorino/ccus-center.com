@@ -1,0 +1,1381 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Cocoon Child
+Description: Cocoon専用の子テーマ
+Theme URI: https://wp-cocoon.com/
+Author: わいひら
+Author URI: https://nelog.jp/
+Template:   cocoon-master
+Version:    1.1.3
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+
+:root {
+    --accent-green: #3193AB;
+    --accent-red: #C2001C;
+    --logo-red: #C2001C;
+    --logo-green: #007841;
+}
+
+@media screen and (min-width: 1000px){
+	.sp_img{
+		display: none;
+	}
+}
+@media screen and (max-width: 1000px){
+	.pc_img{
+		display: none;
+	}
+}
+
+/******** PC ********/
+@media screen and (min-width: 1000px){
+
+/* ヘッダ */
+.header-container {
+    border-top: 10px solid var(--accent-green);
+	padding: 15px 0;
+}
+#menu-item-12 {
+	width: auto;
+}
+#menu-item-12 a {
+    background-image: url(https://www.aichi6031.com/wp-content/uploads/2023/09/ccus_header_tel.png);
+    width: 290px;
+	height: 56px;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+.kv_img_sp{
+	display: none;
+
+}
+.kv_img_pc{
+}
+.date-tags {
+    width: 1000px;
+    margin: 10px auto;
+}
+.toc{
+	width: 80%;
+}
+.toc a{
+	text-decoration: underline;
+}
+/* ヘッダ */
+
+/* ボディ */
+.sp_button{
+	display: none!important;
+}
+.main {
+    padding: 0;
+}
+.entry-content {
+    margin: 0;
+}
+.content {
+    margin: 0;
+    background-color: #fff;
+}
+.full_width,
+.full_image {
+	margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+}
+
+.full_image figure,
+.full_image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: none;
+}
+.wrap{
+    width: 1000px;		
+}
+.wrapper {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+body {
+    --wp--style--global--content-size: 1000px!important;
+}
+.link_title {
+    margin-bottom: 0!important;
+    width: 90%;
+}
+/* ボディ */
+
+/* KV */
+.kv {
+    position: relative;
+}
+.kv .wp-block-buttons {
+    position: absolute;
+    bottom: 8%;
+    left: 32%;
+}
+.cv_button a {
+    text-decoration: none;
+    background: linear-gradient(to right, #3193AB, #25A999);
+    background: -webkit-linear-gradient(left, #3193AB, #25A999);
+    background: linear-gradient(to right, #3193AB, #25A999);
+    padding: 20px 0;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: clamp(22px, 6vw, 30px);
+    margin: 0;
+    text-align: center;
+    width: min(440px, 90vw);
+}
+.cv_button_margin{
+	margin: clamp(20px, 5vw, 40px) auto!important;
+}
+/* KV */
+
+/* ロゴライン */
+.logoline {
+    position: relative;
+	margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+}
+.logoline_line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px 0;
+	width: 100%;
+	height: auto;
+	max-width: none!important;
+}
+.logoline_line p{
+	width: 100%;
+	max-width: none!important;
+}
+.logoline_line1 {
+    border-top: 2px solid var(--logo-red);
+}
+.logoline_line2 {
+    border-top: 2px solid var(--logo-green);
+}
+.logoline_logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: min(15%, 85px);
+}
+/* ロゴライン */
+
+/* 技能者登録 */
+.ginousya_touroku_wrapper p {
+    margin: 0;
+}
+.ginousya_touroku_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(32px, 9vw, 45px);
+    padding: 0 0 30px 0;
+}
+.ginousya_touroku_body {
+    text-align: center;
+}
+.ginousya_touroku_body_line1 {
+    color: var(--accent-red);
+    font-size: clamp(22px, 5vw, 40px);
+    font-weight: bold;
+}
+.ginousya_touroku_body_line2 {
+    color: var(--accent-red);
+    font-size: clamp(26px, 8vw, 50px);
+    font-weight: bold;
+}
+.ginousya_touroku_body_price {
+    color: var(--accent-red);
+    font-size: clamp(22px, 6vw, 50px);
+    font-weight: bold;
+	display: flex;
+	padding: 20px 0 0;
+	align-items: flex-end;
+	margin-bottom: 20px!important;
+	justify-content: center;
+	gap: 10px;
+}
+.price_large {
+    font-size: clamp(60px, 16vw, 140px);
+	line-height: 1em;
+}
+.ministry {
+    font-family: ministry;
+}
+.ginousya_touroku_body_price .price_value{
+	margin-right: 0!important;
+}
+.ginousya_touroku_body_price .price_yen{
+	margin-left: 0!important;
+}
+/* 技能者登録 */
+
+/* 急ぎの方へ */
+.isogi {
+    background-image: url(/wp-content/uploads/2023/09/bg_att_pc.png);
+    padding: 40px 0;
+    background-size: 100%;
+}
+.isogi_wrapper {
+    display: grid;
+    color: #fff;
+    justify-content: center;
+}
+.isogi_title_icon {
+    max-width: 89px!important;
+    display: block!important;
+    margin: 5px auto;
+}
+.isogi_title {
+    font-size: clamp(26px, 8vw, 50px);
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0!important;
+	line-height: 1.5em;
+}
+.isogi_body {
+    font-size: clamp(20px, 5vw, 24px);
+    text-align: center;
+	margin: 0!important;
+}
+/* 急ぎの方へ */
+
+/* お客様からの嬉しい声 */
+.voice {
+    padding: 100px 0;
+}
+.voice_title {
+    font-size: clamp(22px, 5vw, 45px);
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2em;
+}
+.voice_title p {
+    margin: 0;
+}
+.voice_title_large {
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+.voice_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 40px 0;
+}
+.voice_item {
+    display: grid;
+    grid-template-columns: clamp(90px, 25vw, 135px) 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 15px;
+	margin: 0!important;
+}
+.voice_item p {
+    margin: 0;
+}
+.voice_balloon {
+    background-image: url(/wp-content/uploads/2023/09/ill_hukidasi.png);
+    background-repeat: no-repeat;
+    width: clamp(90px, 25vw, 135px);
+    background-size: 100%;
+    aspect-ratio: 180/177;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: clamp(32px, 10vw, 47px);
+    padding-bottom: 5px;
+    background-position: bottom;
+}
+.voice_body {
+    font-size: 20px;
+    max-width: 100%!important;
+    width: 330px!important;
+}
+.voice_buttontitle {
+    text-align: center;
+    color: #FC761D;
+    font-size: 28px;
+    font-weight: bold;
+	margin-bottom: 10px!important;
+}
+/* お客様からの嬉しい声 */
+
+/* カードお渡しまでの流れ */
+.arrow_sp{
+	display: none;
+}
+.step_title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: clamp(22px, 5vw, 40px);
+    line-height: 1.2em;
+    font-weight: bold;
+	margin-bottom: 10px!important;
+}
+.green_text {
+    color: var(--logo-green);
+	margin-bottom: 5px!important;
+}
+.step_title_large {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+.step_box_wrapper {
+    padding: 35px clamp(15px, 5vw, 35px);
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 12em;
+    grid-column-gap: 10px;
+}
+@media screen and (max-width: 1200px){
+ .step_box_wrapper {
+    grid-template-columns: 1fr 40px 1fr 40px;
+    grid-row-gap: 30px;
+ }
+}
+@media screen and (max-width: 1900px){
+ .step_box_wrapper {
+    grid-template-columns: 1fr 40px 1fr 40px 1fr 40px;
+    grid-row-gap: 30px;
+ }
+}
+
+.step_box {
+    border: 2px solid var(--logo-green);
+    border-radius: 5px;
+    padding: clamp(15px, 5vw, 29px);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    grid-template-rows: 3em 1fr;
+    align-items: start;
+	margin-bottom: 0!important;
+}
+.step_box_title {
+    font-size: 30px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.step_box_number {
+    background-color: var(--logo-green);
+    padding: 0 0.5em;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.8em;
+}
+.moushikomi_button_wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: clamp(20px, 5vw, 40px) auto;
+}
+.moushikomi_button_wrapper.in_box {
+    margin: 0;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+}
+.grad_button {
+    text-decoration: none;
+    background: linear-gradient(to right, #3193AB, #25A999);
+    background: -webkit-linear-gradient(left, #3193AB, #25A999);
+    background: linear-gradient(to right, #3193AB, #25A999);
+    padding: 20px 0;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: clamp(22px, 6vw, 30px);
+    margin: 0;
+    text-align: center;
+    width: min(440px, 90vw);
+}
+.step_box .grad_button {
+    padding: 10px 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.step_box .grad_button a {
+    color: #fff;
+    text-decoration: none;
+}
+.step_box_body {
+    display: grid;
+    grid-template-rows: 1.4em;
+    grid-row-gap: 5px;
+    font-size: 18px;
+}
+.step_arrow {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 0!important;
+}
+.step_box_body_item {
+    display: grid;
+    grid-template-columns: 8px 1fr;
+    align-items: center;
+    grid-column-gap: 5px;
+}
+.green_dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--logo-green);
+    border-radius: 4px;
+    display: inline-block;
+}
+.step_box_end {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.step_box_end .step_box_title {
+    grid-template-columns: 1fr;
+}
+.red_text {
+    color: var(--logo-red);
+}
+.step_box_end p,
+.step_box p {
+    margin-bottom: 0;
+}
+.step_buttontitle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+	margin-bottom: 5px!important;
+}
+/* カードお渡しまでの流れ */
+
+/* CCUSとは */
+.about_ccus {
+    padding-bottom: 80px;
+}
+.about_ccus_wrapper {
+    text-align: center;
+    font-size: 22px;
+	width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.about_ccus_wrapper p {
+    margin: 0;
+}
+/* CCUSとは */
+
+/* よくあるご質問 */
+.faq{
+	padding-bottom: 60px;
+}
+.faq_wrapper {
+    padding: 10px 0 0 0;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.faq_qanda {
+    margin: 0 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted var(--logo-green);
+    padding-bottom: 20px;
+}
+.faq_q {
+    font-size: clamp(20px, 6vw, 28px);
+    font-weight: bold;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: clamp(40px, 10vw, 50px) 1fr;
+    align-items: start;
+	margin: 0!important;
+}
+.faq_q_char {
+    font-size: clamp(40px, 10vw, 50px);
+    color: var(--logo-green);
+    font-weight: bold;
+    line-height: 1em;
+	margin: 0!important;
+}
+.faq_q_text {
+    padding-top: 5px;
+	width: 100%;
+}
+.faq_a {
+    font-size: clamp(18px, 5vw, 24px);
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: clamp(40px, 10vw, 50px) 1fr;
+    align-items: start;
+	margin: 0!important;
+}
+.faq_a_char {
+    font-size: clamp(40px, 10vw, 50px);
+    color: var(--logo-red);
+    font-weight: bold;
+    line-height: 1em;
+	margin: 0!important;
+}
+.faq_a_text {
+    padding-top: 5px;
+	width: 100%;
+}
+.faq_qanda * {
+    max-width: 100%!important;
+}
+/* よくあるご質問 */
+
+/* 運営会社 */
+.about_title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: clamp(32px, 9vw, 45px);
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0!important;
+}
+.about_wrapper {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.about_table table{
+    width: calc(100% - 30px)!important;
+    margin: 0 auto;
+	font-size: 16px;
+}
+.about_table table th {
+    background-color: #F3F3F3;
+    padding: 1em;
+    font-weight: normal;
+    border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+}
+.about_table table td{
+	font-weight: normal;
+	text-align: left;
+	border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+    padding: 1em;
+}
+/* 運営会社 */
+
+/* CCUSマガジン一覧 */
+.magazine_title {
+    color: #fff;
+    text-align: center;
+    background-color: #007841!important;
+    padding: 10px 0!important;
+}
+.magazine_list {
+    padding: 10px 0;
+}
+/* CCUSマガジン一覧 */
+
+}
+
+
+/******** SP ********/
+@media screen and (max-width: 1000px){
+*{
+	max-width: 100vw!important;
+	box-sizing: content-box;
+}
+.main {
+    padding: 0!important;
+}
+	
+/* ヘッダ */
+.header-container {
+    border-top: 10px solid var(--accent-green);
+	padding: 0;
+	height: 0;
+}
+#menu-item-12 {
+	width: auto;
+}
+#menu-item-12 a {
+    background-image: url(https://www.aichi6031.com/wp-content/uploads/2023/09/ccus_header_tel.png);
+    width: 290px;
+	height: 56px;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+.logo-header img{
+	width: 90vw;
+}
+.kv_img_sp{
+}
+.kv_img_pc{
+	display: none;
+}
+/* ヘッダ */
+
+/* ボディ */
+.sp_button{
+	margin-bottom: 0!important;
+}
+.tel_button a::before {
+    content: '\f879';
+    font-family: 'Font Awesome 5 free';
+    font-weight: bold;
+    margin-right: 10px;
+}
+.main {
+    padding: 0;
+}
+.entry-content {
+    margin: 0;
+}
+.content {
+    margin: 0;
+    background-color: #fff;
+}
+.full_width,
+.full_image {
+	margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+}
+
+.full_image figure,
+.full_image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: none;
+}
+.wrapper {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+body {
+    --wp--style--global--content-size: 1000px!important;
+}
+/* ボディ */
+
+/* KV */
+.kv {
+    position: relative;
+}
+.kv .wp-block-buttons {
+    position: absolute;
+    bottom: 8%;
+    left: 32%;
+}
+.cv_button a {
+    text-decoration: none;
+    background: linear-gradient(to right, #3193AB, #25A999);
+    background: -webkit-linear-gradient(left, #3193AB, #25A999);
+    background: linear-gradient(to right, #3193AB, #25A999);
+    padding: 5px 0;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: clamp(22px, 6vw, 30px);
+    margin: 0;
+    text-align: center;
+    width: min(440px, 90vw);
+}
+.cv_button_margin{
+	margin: 0 auto clamp(20px, 5vw, 40px) auto!important;
+}
+/* KV */
+
+/* ロゴライン */
+.logoline {
+    position: relative;
+	margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+}
+.logoline_line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px 0;
+	width: 100%;
+	height: auto;
+	max-width: none!important;
+}
+.logoline_line p{
+	width: 100%;
+	max-width: none!important;
+}
+.logoline_line1 {
+    border-top: 2px solid var(--logo-red);
+}
+.logoline_line2 {
+    border-top: 2px solid var(--logo-green);
+}
+.logoline_logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: min(15%, 85px);
+}
+/* ロゴライン */
+
+/* 技能者登録 */
+.ginousya_touroku_wrapper p {
+    margin: 0;
+}
+.ginousya_touroku_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(32px, 9vw, 45px);
+    padding: 0 0 30px 0;
+}
+.ginousya_touroku_body {
+    text-align: center;
+}
+.ginousya_touroku_body_line1 {
+    color: var(--accent-red);
+    font-size: clamp(22px, 5vw, 40px);
+    font-weight: bold;
+}
+.ginousya_touroku_body_line2 {
+    color: var(--accent-red);
+    font-size: clamp(26px, 8vw, 50px);
+    font-weight: bold;
+}
+.ginousya_touroku_body_price {
+    color: var(--accent-red);
+    font-size: clamp(22px, 6vw, 50px);
+    font-weight: bold;
+	display: flex;
+	padding: 20px 0 0;
+	align-items: flex-end;
+	margin-bottom: 20px!important;
+	justify-content: center;
+	gap: 10px;
+}
+.price_large {
+    font-size: clamp(60px, 16vw, 140px);
+	line-height: 1em;
+}
+.ministry {
+    font-family: ministry;
+}
+.ginousya_touroku_body_price .price_value{
+	margin-right: 0!important;
+}
+.ginousya_touroku_body_price .price_yen{
+	margin-left: 0!important;
+}
+/* 技能者登録 */
+
+/* 急ぎの方へ */
+.isogi {
+    background-image: url(/wp-content/uploads/2023/09/bg_att_pc.png);
+    padding: 40px 0;
+    background-size: 100%;
+}
+.isogi_wrapper {
+    display: grid;
+    color: #fff;
+    justify-content: center;
+}
+.isogi_title_icon {
+    max-width: 89px!important;
+    display: block!important;
+    margin: 5px auto;
+}
+.isogi_title {
+    font-size: clamp(26px, 8vw, 50px);
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0!important;
+	line-height: 1.5em;
+}
+.isogi_body {
+    font-size: clamp(20px, 5vw, 24px);
+    text-align: center;
+	margin: 0!important;
+}
+/* 急ぎの方へ */
+
+/* お客様からの嬉しい声 */
+.arrow_pc{
+	display: none;
+}
+.voice {
+    padding: 100px 0;
+}
+.voice_title {
+    font-size: clamp(22px, 5vw, 45px);
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2em;
+}
+.voice_title p {
+    margin: 0;
+}
+.voice_title_large {
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+.voice_items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 40px 0;
+}
+.voice_item {
+    display: grid;
+    grid-template-columns: 20vw 65vw;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 5vw;
+	margin: 0 5vw;
+	margin-bottom: 0!important;
+}
+.voice_item p {
+    margin: 0;
+}
+.voice_balloon {
+    background-image: url(/wp-content/uploads/2023/09/ill_hukidasi.png);
+    background-repeat: no-repeat;
+    width: 20vw;
+    background-size: 100%;
+    aspect-ratio: 180/177;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 5px;
+    background-position: bottom;
+}
+.voice_body {
+    font-size: 16px;
+    max-width: 100%!important;
+    width: 100%!important;
+}
+.voice_buttontitle {
+    text-align: center;
+    color: #FC761D;
+    font-size: 28px;
+    font-weight: bold;
+	margin-bottom: 10px!important;
+}
+/* お客様からの嬉しい声 */
+
+/* カードお渡しまでの流れ */
+.step_title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: clamp(22px, 5vw, 40px);
+    line-height: 1.2em;
+    font-weight: bold;
+	margin-bottom: 10px!important;
+}
+.green_text {
+    color: var(--logo-green);
+	margin-bottom: 5px!important;
+}
+.step_title_large {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+.step_box_wrapper {
+    padding: 35px clamp(15px, 5vw, 35px);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.step_box {
+    border: 2px solid var(--logo-green);
+    border-radius: 5px;
+    padding: clamp(15px, 5vw, 29px);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    grid-template-rows: 3em 1fr;
+    align-items: start;
+	margin-bottom: 0!important;
+}
+.step_box_title {
+    font-size: 30px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.step_box_number {
+    background-color: var(--logo-green);
+    padding: 0 0.5em;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.8em;
+}
+.moushikomi_button_wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: clamp(20px, 5vw, 40px) auto;
+}
+.moushikomi_button_wrapper.in_box {
+    margin: 0;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+}
+.grad_button {
+    text-decoration: none;
+    background: linear-gradient(to right, #3193AB, #25A999);
+    background: -webkit-linear-gradient(left, #3193AB, #25A999);
+    background: linear-gradient(to right, #3193AB, #25A999);
+    padding: 20px 0;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: clamp(22px, 6vw, 30px);
+    margin: 0;
+    text-align: center;
+    width: min(440px, 90vw);
+}
+.step_box .grad_button {
+    padding: 10px 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.step_box .grad_button a {
+    color: #fff;
+    text-decoration: none;
+}
+.step_box_body {
+    display: grid;
+    grid-template-rows: 1.4em;
+    grid-row-gap: 5px;
+    font-size: 18px;
+}
+.step_arrow {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 0!important;
+}
+.step_box_body_item {
+    display: grid;
+    grid-template-columns: 8px 1fr;
+    align-items: center;
+    grid-column-gap: 5px;
+}
+.green_dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--logo-green);
+    border-radius: 4px;
+    display: inline-block;
+}
+.step_box_end {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.step_box_end .step_box_title {
+    grid-template-columns: 1fr;
+}
+.red_text {
+    color: var(--logo-red);
+}
+.step_box_end p,
+.step_box p {
+    margin-bottom: 0;
+}
+.step_buttontitle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+	margin-bottom: 5px!important;
+}
+/* カードお渡しまでの流れ */
+
+/* CCUSとは */
+.about_ccus {
+	padding: 35px clamp(15px, 5vw, 35px);
+    padding-bottom: 80px;
+}
+.about_ccus_wrapper {
+    text-align: center;
+    font-size: 22px;
+	width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+	text-align: left;
+}
+.about_ccus_wrapper p {
+    margin: 0;
+}
+/* CCUSとは */
+
+/* よくあるご質問 */
+.faq{
+	padding-bottom: 60px;
+}
+.faq_wrapper {
+    padding: 10px 0 0 0;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.faq_qanda {
+    margin: 0 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted var(--logo-green);
+	padding: 0 clamp(15px, 5vw, 35px);
+    padding-bottom: 20px;
+}
+.faq_q {
+    font-size: clamp(20px, 6vw, 28px);
+    font-weight: bold;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: clamp(40px, 10vw, 50px) 1fr;
+    align-items: start;
+	margin: 0!important;
+}
+.faq_q_char {
+    font-size: clamp(40px, 10vw, 50px);
+    color: var(--logo-green);
+    font-weight: bold;
+    line-height: 1em;
+	margin: 0!important;
+}
+.faq_q_text {
+    padding-top: 5px;
+	width: 100%;
+}
+.faq_a {
+    font-size: clamp(18px, 5vw, 24px);
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: clamp(40px, 10vw, 50px) 1fr;
+    align-items: start;
+	margin: 0!important;
+}
+.faq_a_char {
+    font-size: clamp(40px, 10vw, 50px);
+    color: var(--logo-red);
+    font-weight: bold;
+    line-height: 1em;
+	margin: 0!important;
+}
+.faq_a_text {
+    padding-top: 5px;
+	width: 100%;
+}
+.faq_qanda * {
+    max-width: 100%!important;
+}
+/* よくあるご質問 */
+
+/* 運営会社 */
+.about_title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: clamp(32px, 9vw, 45px);
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0!important;
+}
+.about_wrapper {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.about_table table{
+    width: calc(100% - 30px)!important;
+    margin: 0 auto;
+	font-size: 16px;
+}
+.about_table table th {
+    background-color: #F3F3F3;
+    padding: 1em;
+    font-weight: normal;
+    border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+}
+.about_table table td{
+	font-weight: normal;
+	text-align: left;
+	border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+    padding: 1em;
+}
+	
+/* CCUSマガジン一覧 */
+.magazine_title {
+    color: #fff;
+    text-align: center;
+    background-color: #007841!important;
+    padding: 10px 0!important;
+}
+.magazine_list {
+    padding: 10px 15px;
+}
+/* CCUSマガジン一覧 */
+	
+/* 運営会社 */	
+}
+
+
+
+
+
+/* 投稿ページ */
+.single-post .author-info,
+.single-post .sns-share,
+.single-post .sns-follow{
+    display: none;
+}
+
+.single-post .article-header {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    background-color: #F3F3F3;
+    padding: 30px 10px 1px 10px;
+    margin-bottom: 30px;
+	margin-top: 20px;
+	position: relative;
+}
+@media screen and (max-width: 1000px){
+	.single-post .article-header {
+	    margin-top: 60px;
+	}
+}
+
+.single-post .article-header::before {
+    content: 'CCUSマガジン';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    background-color: #007841;
+    color: #fff;
+    padding: 5px 21px;
+    border-radius: 20px;
+	transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+.single-post .entry-title {
+    width: 1000px;
+    margin: 0 auto;
+    max-width: 80vw!important;
+}
+@media screen and (max-width: 1000px){
+    .single-post .contentbox{
+	    padding: 0 20px;
+    }
+}
+.single-post .wp-block-image img {
+    width: 100%;
+}
+
+.single-post .green-text {
+    color: #007841;
+}
+
+.single-post .osusume-title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.single-post .osusume_list {
+    padding: 30px;
+    background-color: #ECF5F1;
+    border-radius: 5px;
+}
+
+.single-post .heading_with_logo {
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 50px;
+    position: relative;
+	line-height: 1em;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 1000px){
+	.single-post .heading_with_logo {
+		font-size: 20px;
+	}
+}
+
+.single-post .heading_with_logo::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    width: 40px;
+    height: 24px;
+    background-image: url(/wp-content/uploads/2023/09/ic_ccuslogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.single-post .title_and_button {
+    text-align: center;
+}
+.single-post .button_title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #C2001C;
+    font-size: 24px;
+    line-height: 1em;
+}
+@media screen and (max-width: 1000px){
+	.single-post .button_title {
+		font-size: 20px;
+	}
+}
+.single-post .button_box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 10px;
+	margin-bottom: 0;
+}
+.single-post .tel_time {
+    font-size: 14px;
+}
+
+.single-post .green_round_button a,
+.single-post .green_round_button a:active,
+.single-post .green_round_button a:hover {
+    display: block;
+	color: #fff;
+    padding: 12px;
+    width: 440px;
+    max-width: 90vw!important;
+    border-radius: 40px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #3193ab 0%, #25a999 100%);
+}
+@media screen and (max-width: 1000px){
+	.single-post .green_round_button a,
+	.single-post .green_round_button a:active,
+	.single-post .green_round_button a:hover {
+		font-size: 22px;
+	}
+}
+@media screen and (min-width: 1000px){
+	.tel_button{
+		display: none!important;
+	}
+}
+@media screen and (max-width: 1000px){
+	.telno_button{
+		display: none!important;
+	}
+}
+
+.single-post h2.wp-block-heading {
+    background: transparent;
+    border-left: 5px solid #3193AB;
+    padding: 15px 20px;
+}
+.single-post h3.wp-block-heading {
+    background-color: #F3F3F3;
+    border: none;
+    padding: 20px 30px;
+}
+@media screen and (max-width: 1000px){
+	.single-post h2.wp-block-heading {
+        padding: 10px 15px;
+	}
+	.single-post h3.wp-block-heading {
+		padding: 10px 15px;
+	}
+}
+
+/* 監修者 */
+.single-post .kansyu_box {
+    border: 2px solid #007841;
+    border-radius: 5px;
+}
+.single-post .kansyu_box *{
+	margin: 0;
+}
+.single-post .kansyu_title {
+    background-color: #007841;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.single-post .kansyu_gridbox {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-column-gap: 20px;
+    padding: 20px 10px;
+}
+.single-post .kansyu_photo img {
+    display: block;
+    border-radius: 50%;
+}
+
+.single-post .container{
+	background-color: #fff;
+}
+.single-post .eye-catch-wrap {
+    display: none!important;
+}
+.single-post .entry-categories-tags {
+    display: none!important;
+}
+@media screen and (max-width: 1000px){
+    .single-post .under-entry-content {
+        padding: 0 20px;
+    }
+}
+.kansyu_rightbox {
+    width: 100%;
+}
+
+
+/* 投稿ページ */
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1023px以下*/
+@media screen and (max-width: 1023px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*834px以下*/
+@media screen and (max-width: 834px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px){
+  /*必要ならばここにコードを書く*/
+}
