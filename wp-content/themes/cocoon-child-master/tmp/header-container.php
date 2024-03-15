@@ -40,7 +40,8 @@ if (typeof jQuery === 'undefined') {
   </div>
   
   <div class="ch_tel">
-   <a href="tel:0120968631">
+   <?php /* スマホ電話ボタンのリンク先修正 */ ?>
+   <!--<a href="tel:0120968631">--><a href="/1434/">
     <div class="ch_tel_button_pc"><img src="/wp-content/uploads/2023/12/top_tel_ccus_s.png" alt="0120968631"></div>
     <div class="ch_tel_button_sp sp_button"><i class="fas fa-phone-alt tel_icon sp_icon"></i><span class="tel_text sp_text">TEL</span></div>
    </a>
